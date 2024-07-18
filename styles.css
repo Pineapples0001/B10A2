@@ -156,6 +156,95 @@ header{
     font-weight: 900;
 }
 
+.tasks{
+    margin-top: -0.2rem;
+    color: white;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.motto2{
+    padding-top: 6.25rem;
+    padding-bottom: 0.875rem;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
+
+}
+
+.tasks2{
+    margin-top: 3.625rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.description2{
+    padding-left: 27%;
+    padding-right: 27%;
+}
+
+.c-img{
+    width: 11.5rem;
+    height: 11.25rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.task-head{
+    margin-top: 1.875rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.task-des{
+    padding: 0.375rem 1rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.task3{
+    background-color: black;
+}
+
+.join-box-main{
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    padding:2%;
+    margin-right: 11%;
+    margin-left: 11%;
+}
+.join-box{
+    padding-right: 28%;
+}
+
+.join-head{
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.task-des2{
+    padding: 0;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.join-img{
+    width: 22.875rem;
+    height: 15.5rem;
+    border-radius: 18px;
+}
+
+
 @media screen and (max-width: 576px){
     .navbar{
         justify-content: space-between;
@@ -208,5 +297,23 @@ header{
         width: 35%;
         top: 4rem;
         left: 12rem;
+    }
+
+    .tasks2{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .task-des{
+        margin-bottom: 2.25rem;
+    }
+
+    .tasks{
+        font-size: 3rem;
+    }
+
+    .description2{
+        font-size: 0.875rem;
+        padding-left: 21%;
+        padding-right: 21%;
     }
 }
