@@ -316,4 +316,11 @@ header{
         padding-left: 21%;
         padding-right: 21%;
     }
+
+    .join-box-main{
+        flex-direction: column;
+    }
+    .join-box{
+        padding: 12%;
+    }
 }
