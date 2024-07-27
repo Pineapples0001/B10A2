@@ -16,7 +16,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    line-height: 120%;
 }
 
 .logo{
@@ -77,7 +76,8 @@ header{
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     font-size: 1rem;
-    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+
 }
 
 .primary-btn{
@@ -207,7 +207,9 @@ header{
 }
 
 .task3{
+    margin-top: -0.5rem;
     background-color: black;
+    padding-bottom: 10%;
 }
 
 .join-box-main{
@@ -243,7 +245,108 @@ header{
     height: 15.5rem;
     border-radius: 18px;
 }
+.calculator-main{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
 
+.calculator{
+    background-color: black;
+    padding-top: 5%;
+    color: white;
+}
+.calculator-table{
+    background-color: rgb(34, 34, 34);
+    padding-top: 2%;
+}
+.calhead{
+    font-weight: 900;
+    font-size: 3rem;
+    padding-left: 30%;
+}
+.caldes{
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 30%;
+    padding-right: 25%;
+    margin-top: 2% ;
+    padding-bottom: 5%;
+}
+table {
+    width: 21%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    font-family: Inter;
+    background-color: rgb(34, 34, 34);
+}
+
+caption {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.caption{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+thead {
+    background-color:rgb(34, 34, 34);
+    color: white;
+}
+
+th, td {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+th {
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+}
+
+.caption-head{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: left;
+}
+.bmi-des{
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.height{
+    grid-area: height;
+}
+
+.weight{
+    grid-area: weight;
+}
+.age{
+    grid-area: age;
+}
+.gender{
+    grid-area: gender;
+}
+
+.activity{
+    grid-area: activity;
+}
+.input-box{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "height weight"
+    "age gender"
+    "activity activity";
+}
 
 @media screen and (max-width: 576px){
     .navbar{
@@ -260,13 +363,15 @@ header{
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
-        cursor: pointer;
     }
     .ham span{
         display: block;
         width: 25px;
         height: 1px;
         background-color: white;
+    }
+    .written{
+        width: auto;
     }
     .banner{
         flex-direction: column;
@@ -279,27 +384,27 @@ header{
 
     .motto{
         font-size: 2.25rem;
-        padding-right: 50%;
+        padding-right: 35%;
     }
 
     .description{
-        padding-right: 50%;
+        padding-right: 35%;
     }
-
 
     .s-border{
         width: 40%;
         height: 15%;
-        top: 16rem;
-        right: 16rem;
+        top: 14rem;
+        right: 13rem;
     }
     .s2-border{
-        width: 35%;
+        width: 40%;
         top: 4rem;
         left: 12rem;
     }
 
     .tasks2{
+        margin-top: 1.8rem;
         grid-template-columns: repeat(1,1fr);
     }
 
@@ -310,17 +415,35 @@ header{
     .tasks{
         font-size: 3rem;
     }
+    .motto2{
+        padding-top: 0rem;
+        font-size: 35px;
+    }
 
     .description2{
         font-size: 0.875rem;
-        padding-left: 21%;
-        padding-right: 21%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
-
     .join-box-main{
         flex-direction: column;
     }
     .join-box{
-        padding: 12%;
+        padding: 7%;
+    }
+
+    .wide-btn{
+        padding: 1rem 6rem 1rem 6rem;
+    }
+
+    .join-img{
+        width: 80%;
+        height: auto;
+    }
+    .btn-container{
+        text-align: center;
+    }
+    .join-img-main{
+        text-align: center;
     }
 }
