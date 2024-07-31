@@ -57,7 +57,7 @@ header{
     font-family: Inter;
     color: rgb(255,255,255);
     height: 17.625rem;
-    width: 32.5rem;
+    width: 32%;
 }
 
 .shape{
@@ -241,24 +241,29 @@ header{
 
 
 .join-img{
-    width: 22.875rem;
+    width: auto;
     height: 15.5rem;
     border-radius: 18px;
 }
 .calculator-main{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10rem;
+    background-color: rgb(34, 34, 34);
+    padding-top: 3%;
+    padding-bottom: 3%;
+
 }
 
 .calculator{
     background-color: black;
-    padding-top: 5%;
     color: white;
 }
 .calculator-table{
     background-color: rgb(34, 34, 34);
-    padding-top: 2%;
+    text-align: center;
+    padding-left: 5%;
 }
 .calhead{
     font-weight: 900;
@@ -274,17 +279,18 @@ header{
 }
 table {
     width: 21%;
-    margin: 2rem auto;
     border-collapse: collapse;
     font-family: Inter;
     background-color: rgb(34, 34, 34);
+    border: 2px dashed rgb(255,255,255,0.1);
 }
 
 caption {
     color: white;
     font-size: 1.75rem;
     font-weight: 900;
-    margin-bottom: 1rem;
+    margin-bottom: 3.25rem;
+    text-align: left;
 }
 
 .caption{
@@ -300,18 +306,21 @@ thead {
 
 th, td {
     color: rgba(255, 255, 255, 0.5);
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    text-wrap: nowrap;
 }
 
 th {
     font-weight: 500;
     color: white;
     font-size: 1rem;
+    text-align: left;
 }
 
 .caption-head{
+    padding-top: 10%;
     color: white;
     font-size: 1.75rem;
     font-weight: 900;
@@ -321,31 +330,35 @@ th {
     text-align: left;
     padding-top: 1rem;
     padding-bottom: 2rem;
-}
-.height{
-    grid-area: height;
-}
-
-.weight{
-    grid-area: weight;
-}
-.age{
-    grid-area: age;
-}
-.gender{
-    grid-area: gender;
-}
-
-.activity{
-    grid-area: activity;
+    font-weight: 400;
 }
 .input-box{
     display: grid;
     gap: 1rem;
-    grid-template-areas: 
-    "height weight"
-    "age gender"
-    "activity activity";
+    grid-template-columns: repeat(2,2fr);
+}
+
+.input-box input,
+.input-box select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.cal-btn{
+    margin-top: 1.5rem;
+    font-family: Inter;
+    color: rgb(255,255,255);
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
+    border-radius: 42px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    width: 75%;
 }
 
 @media screen and (max-width: 576px){
@@ -445,5 +458,37 @@ th {
     }
     .join-img-main{
         text-align: center;
+    }
+    .calculator{
+        margin-top: -0.2rem;
+    }
+    .calculator-main{
+        flex-direction: column;
+    }
+    .calhead{
+        font-size: 2rem;
+        padding-left: 12%;
+    }
+    .caldes{
+        padding-left: 12%;
+        padding-right: 5%;
+        font-size: 0.875rem;
+    }
+    .calculator-table{
+        justify-content: left;
+        padding-left: 0;
+    }
+    table {
+        width: 100%;
+    }
+    caption {
+        font-size: 1rem;
+        padding-top: 10%;
+    }
+    .bmi-des, .caption-head{
+        font-size: 1rem; 
+    }
+    .input-box{
+        width: 35%;
     }
 }
